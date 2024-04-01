@@ -48,18 +48,31 @@ public class MatrixTests
     }
 
     [Test]
-    public void TestPringMatrix()
+    public void TestPrintMatrix()
     {
+        // Arrange
+        var sw = new StringWriter();
+        Console.SetOut(sw);
+        var expected =  "1    2    3 \n   4    5    6 \n   7    8    9";
+        
         // Act
-        Console.WriteLine("Test PrintMatrix: ");
         _matrix.PrintMatrix();
+
+        // Assert
+        Assert.That(sw.ToString().Trim(), Is.EqualTo(expected));
     }
 
     [Test]
     public void TestSnail()
     {
+        // Arrange 
+        int[,] dataMatrix = new int[,] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        int[] expected = new []{1, 2, 3, 6, 9, 8, 7, 4, 5};
+        
         // Act
-        Console.WriteLine("Test PringSnail: ");
-        _matrix.PrintSnail();
-    }   
+        int[] expectedSnailArray = _matrix.GetSnail();
+        
+        // Assert
+        Assert.That(expectedSnailArray, Is.EqualTo(expected));
+    }    
  }
