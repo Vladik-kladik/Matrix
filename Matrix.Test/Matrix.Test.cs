@@ -60,6 +60,6 @@ public class MatrixTests
     {
         // Act
         Console.WriteLine("Test PringSnail: ");
-        _matrix.PrintSnail();
+        _matrix.GetSnail();
     }   
  }

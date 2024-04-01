@@ -40,7 +40,11 @@
             Console.WriteLine("\nTrace of the Matrix: " + matrix.Trace);
 
             Console.Write("Snail Matrix:\n");
-            matrix.PrintSnail();
+            int[] snailMatrix = matrix.GetSnail();
+            foreach (var element in snailMatrix)
+            {
+                Console.Write(element + " ");
+            }
             
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
