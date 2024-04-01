@@ -95,13 +95,4 @@ public class Matrix
         }
         return snailArray;
     }
-
-    public void PrintSnail()
-    {
-        int[] snailArray = GetSnail();
-        foreach (var item in snailArray)
-        {
-            Console.WriteLine(item + ", ");
-        }
-    }
 }
