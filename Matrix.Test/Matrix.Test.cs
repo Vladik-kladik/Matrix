@@ -13,7 +13,7 @@ public class MatrixTests
     }
 
     [Test]
-    public void TestFillRandomNumbers()
+    public void Fill_Random_Numbers()
     {
         // Act
         _matrix.FillWithRandomNumbers();
@@ -27,7 +27,7 @@ public class MatrixTests
     }
 
     [Test]
-    public void TestCalculateTraceSquareMatrix()
+    public void Calculate_Trace_Square_Matrix()
     {
         // Act 
         _matrix.CalculateTrace();
@@ -36,7 +36,7 @@ public class MatrixTests
     }
 
     [Test]
-    public void TestCalculateTraceRectangleMatrix()
+    public void Calculate_Trace_Rectangle_Matrix()
     {
         // Arrange
         _matrix = new BL.Matrix(3, 4);
@@ -48,7 +48,7 @@ public class MatrixTests
     }
 
     [Test]
-    public void TestPrintMatrix()
+    public void Print_Matrix()
     {
         // Arrange
         var sw = new StringWriter();
@@ -63,7 +63,7 @@ public class MatrixTests
     }
 
     [Test]
-    public void TestSnail()
+    public void Test_Snail()
     {
         // Arrange 
         int[,] dataMatrix = new int[,] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
