@@ -13,7 +13,7 @@ public class MatrixTests
     }
 
     [Test]
-    public void Fill_Random_Numbers()
+    public void Fill_Random_Numbers_expects_filled_matrix_as_string()
     {
         // Act
         _matrix.FillWithRandomNumbers();
@@ -36,7 +36,7 @@ public class MatrixTests
     }
 
     [Test]
-    public void Calculate_Trace_Rectangle_Matrix()
+    public void Calculate_trace_rectangle_Matrix()
     {
         // Arrange
         _matrix = new BL.Matrix(3, 4);
@@ -48,7 +48,7 @@ public class MatrixTests
     }
 
     [Test]
-    public void Print_Matrix()
+    public void Print_matrix_excepts_matrix_as_string()
     {
         // Arrange
         var sw = new StringWriter();
@@ -63,7 +63,7 @@ public class MatrixTests
     }
 
     [Test]
-    public void Test_Snail()
+    public void Get_snail_expects_snail_as_string()
     {
         // Arrange 
         int[,] dataMatrix = new int[,] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
