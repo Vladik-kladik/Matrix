@@ -27,7 +27,7 @@ public class MatrixTests
     }
 
     [Test]
-    public void Calculate_Trace_Square_Matrix()
+    public void Calculate_Trace_Square_Matrix_expects_correct_square()
     {
         // Act 
         _matrix.CalculateTrace();
@@ -36,7 +36,7 @@ public class MatrixTests
     }
 
     [Test]
-    public void Calculate_trace_rectangle_Matrix()
+    public void Calculate_trace_rectangle_matrix_expects_correct_rectangle()
     {
         // Arrange
         _matrix = new BL.Matrix(3, 4);
